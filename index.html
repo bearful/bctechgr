@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&C Tech | Web Development for Grand Rapids Businesses</title>
+    <meta name="description" content="B&C Tech builds modern, professional websites for local businesses in Grand Rapids and East Grand Rapids.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>B&C Tech</h1>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="b-c-tech.png" alt="B&C Tech Logo" class="hero-logo fade-in">
+            <h2 class="hero-title fade-in">Modern Websites for<br><span class="highlight">Grand Rapids</span> Businesses</h2>
+            <p class="hero-subtitle fade-in">We build stunning, fast, and effective websites that help local businesses grow.</p>
+            <a href="#contact" class="cta-button fade-in">Get Your Free Quote</a>
+        </div>
+        <div class="hero-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Custom Website Design</h3>
+                    <p>Beautiful, unique designs tailored to your brand and business goals.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Responsive Development</h3>
+                    <p>Websites that look perfect on every device - desktop, tablet, and mobile.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Lightning-fast websites that rank well on Google and convert visitors.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing support to keep your website updated, secure, and running smoothly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Online stores that make it easy for customers to buy from you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>SEO & Analytics</h3>
+                    <p>Get found online and understand how your website is performing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Local Expertise,<br>Global Quality</h2>
+                    <p>We're a Grand Rapids-based web development team dedicated to helping local businesses thrive online. We understand the unique needs of businesses in West Michigan and combine that local knowledge with cutting-edge web technologies.</p>
+                    <p>Whether you're a restaurant in East Grand Rapids, a retail shop downtown, or a service provider anywhere in the area, we'll create a website that helps you reach more customers and grow your business.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Fast</h3>
+                            <p>Turnaround Time</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Local</h3>
+                            <p>Grand Rapids Based</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="contact-subtitle">Ready to take your business online? Get in touch for a free consultation.</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="business">Business Name</label>
+                        <input type="text" id="business" name="business">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Tell us about your project *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <p>Serving Grand Rapids &<br>East Grand Rapids, MI</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <p><a href="mailto:hello@bctech.com">hello@bctech.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <p><a href="tel:+16165551234">(616) 555-1234</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 B&C Tech. All rights reserved. Proudly serving Grand Rapids, MI.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
