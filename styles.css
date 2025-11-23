@@ -396,15 +396,16 @@ body {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 4rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .contact-form {
-    display: grid;
+    display: none; /* Hidden for now */
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     background: rgba(255, 255, 255, 0.9);
