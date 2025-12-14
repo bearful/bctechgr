@@ -75,55 +75,14 @@ document.querySelectorAll('.service-card').forEach((card, index) => {
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        business: document.getElementById('business').value,
-        message: document.getElementById('message').value
-    };
-
+contactForm.addEventListener('submit', (e) => {
     // Show loading state
     const submitButton = contactForm.querySelector('.submit-button');
-    const originalText = submitButton.textContent;
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
 
-    // Simulate form submission (replace with actual backend endpoint)
-    try {
-        // For now, just simulate a successful submission
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
-        // Show success message
-        formStatus.className = 'form-status success';
-        formStatus.textContent = 'Thank you! We\'ll get back to you within 24 hours.';
-
-        // Reset form
-        contactForm.reset();
-
-        // Log form data to console (for demonstration)
-        console.log('Form submitted:', formData);
-
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            formStatus.style.display = 'none';
-        }, 5000);
-
-    } catch (error) {
-        // Show error message
-        formStatus.className = 'form-status error';
-        formStatus.textContent = 'Oops! Something went wrong. Please try again or email us directly.';
-
-        console.error('Form submission error:', error);
-    } finally {
-        // Reset button
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }
+    // Form will submit to FormSubmit.co naturally
+    // FormSubmit will handle the actual sending
 });
 
 // Navbar scroll effect
