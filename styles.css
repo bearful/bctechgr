@@ -556,6 +556,13 @@ body {
     color: var(--secondary);
 }
 
+.call-hours {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.25rem;
+    font-style: italic;
+}
+
 /* Footer */
 .footer {
     background: var(--dark);
