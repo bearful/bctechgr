@@ -647,12 +647,17 @@ body {
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .contact-form {
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
     }
 }
 
