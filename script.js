@@ -71,20 +71,6 @@ document.querySelectorAll('.service-card').forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
 });
 
-// Form Submission Handler
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-
-contactForm.addEventListener('submit', (e) => {
-    // Show loading state
-    const submitButton = contactForm.querySelector('.submit-button');
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-
-    // Form will submit to FormSubmit.co naturally
-    // FormSubmit will handle the actual sending
-});
-
 // Navbar scroll effect
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
